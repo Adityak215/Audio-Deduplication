@@ -12,6 +12,10 @@ coverage/
 
 # Environment variables
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Logs
 *.log
@@ -24,3 +28,11 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Misc
+TESTING_LOGS.md 
+README.MD 
+LOGGING_GUIDE.md 
+LOGGING_EXAMPLES.md 
+frontend/README_frontend.md 
+backend/README_backend.md
