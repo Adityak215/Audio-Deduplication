@@ -29,10 +29,3 @@ pnpm-debug.log*
 Thumbs.db
 .vscode/
 
-# Misc
-TESTING_LOGS.md 
-README.MD 
-LOGGING_GUIDE.md 
-LOGGING_EXAMPLES.md 
-frontend/README_frontend.md 
-backend/README_backend.md
