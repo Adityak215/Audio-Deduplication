@@ -1,0 +1,358 @@
+[nodemon] starting `node src/server.js`
+[dotenv@17.3.1] injecting env (11) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+[dotenv@17.3.1] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+Connected to Redis
+[2026-02-27 03:33:52.091 +0530] INFO: Fingerprint worker started
+[2026-02-27 03:33:52.183 +0530] DEBUG: Schema already initialized
+[2026-02-27 03:33:52.183 +0530] INFO: Database initialized successfully
+[2026-02-27 03:33:52.184 +0530] INFO: Redis connected
+[2026-02-27 03:33:52.184 +0530] INFO: Supabase connected
+[2026-02-27 03:33:52.185 +0530] INFO: Server listening on port 5000
+[2026-02-27 03:33:58.192 +0530] DEBUG: Computing file hash
+    filename: "Stray Kids - Charmer.flac"
+[2026-02-27 03:33:58.282 +0530] DEBUG: Hash computed - uploading to temp bucket
+    filename: "Stray Kids - Charmer.flac"
+    contentHash: "b842470b7cf4932d58a2236ade0084ed9e2401a0676e905f71c408fb2e865dc2"
+    tempFile: "c2a64379-1e5d-4073-9aee-3c8285594e36_Stray Kids - Charmer.flac"
+[2026-02-27 03:34:03.446 +0530] DEBUG: File uploaded to temp bucket
+    filename: "Stray Kids - Charmer.flac"
+    tempFile: "c2a64379-1e5d-4073-9aee-3c8285594e36_Stray Kids - Charmer.flac"
+Connected to PostgreSQL
+[2026-02-27 03:34:03.596 +0530] DEBUG: Moving file from temp to permanent bucket
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    tempFile: "c2a64379-1e5d-4073-9aee-3c8285594e36_Stray Kids - Charmer.flac"
+    permanentFile: "b842470b7cf4932d58a2236ade0084ed9e2401a0676e905f71c408fb2e865dc2_Stray Kids - Charmer.flac"
+[2026-02-27 03:34:04.425 +0530] INFO: Original audio file stored in Supabase - fingerprinting queued
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    filename: "Stray Kids - Charmer.flac"
+    fileSize: 23705819
+    mimeType: "audio/x-flac"
+    status: "ORIGINAL_FILE"
+    storagePath: "b842470b7cf4932d58a2236ade0084ed9e2401a0676e905f71c408fb2e865dc2_Stray Kids - Charmer.flac"
+[2026-02-27 03:34:04.472 +0530] DEBUG: Fingerprint job queued
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+[2026-02-27 03:34:04.476 +0530] DEBUG: Local temp file cleaned up
+    file: "C:\Users\Acer\WebProjects\AudioDedup\backend\uploads\455d655a0d46e1e41072ccacbbfa0b75"
+[2026-02-27 03:34:04.476 +0530] INFO: Audio file uploaded successfully
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    filename: "Stray Kids - Charmer.flac"
+    size: 23705819
+[2026-02-27 03:34:04.478 +0530] INFO: request completed
+    req: {
+      "id": 1,
+      "method": "POST",
+      "url": "/upload",
+      "query": {},
+      "params": {},
+      "headers": {
+        "user-agent": "PostmanRuntime/7.51.1",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "0e60fe78-8dbf-4c1e-954f-bf11747b9653",
+        "host": "localhost:5000",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-type": "multipart/form-data; boundary=--------------------------943814109588914106751688",
+        "content-length": "23706045"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 62956
+    }
+    res: {
+      "statusCode": 201,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "x-ratelimit-limit": "100",
+        "x-ratelimit-remaining": "99",
+        "date": "Thu, 26 Feb 2026 22:03:58 GMT",
+        "x-ratelimit-reset": "1772143499",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "68",
+        "etag": "W/\"44-V39Lq9ckN8ZH4JC8pP29GCOlDh0\""
+      }
+    }
+    responseTime: 6446
+[2026-02-27 03:34:04.481 +0530] INFO: Starting fingerprint processing
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+[2026-02-27 03:34:04.482 +0530] DEBUG: Downloading file from Supabase
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    storagePath: "b842470b7cf4932d58a2236ade0084ed9e2401a0676e905f71c408fb2e865dc2_Stray Kids - Charmer.flac"
+[2026-02-27 03:34:07.986 +0530] DEBUG: File downloaded for fingerprinting
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    tempFilePath: "C:\Users\Acer\AppData\Local\Temp\fp_9a7d2d86-5d62-48be-869a-280bc0862ac6.tmp"
+[2026-02-27 03:34:08.176 +0530] DEBUG: Fingerprint generated
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    fingerprintLength: 3568
+[2026-02-27 03:34:08.179 +0530] INFO: Fingerprint stored in database
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+[2026-02-27 03:34:08.179 +0530] DEBUG: Starting similarity check against existing files
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    filename: "Stray Kids - Charmer.flac"
+[2026-02-27 03:34:08.180 +0530] DEBUG: Comparing against 0 existing fingerprints
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    filesChecked: 0
+[2026-02-27 03:34:08.180 +0530] DEBUG: No similar files found - file stored successfully
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    filename: "Stray Kids - Charmer.flac"
+[2026-02-27 03:34:08.180 +0530] INFO: Fingerprint processing completed
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+[2026-02-27 03:34:08.182 +0530] DEBUG: Temporary fingerprint file removed
+    audioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    tempFilePath: "C:\Users\Acer\AppData\Local\Temp\fp_9a7d2d86-5d62-48be-869a-280bc0862ac6.tmp"
+[2026-02-27 03:34:08.228 +0530] DEBUG: Fingerprint job completed
+    jobId: "39"
+[2026-02-27 03:34:16.278 +0530] DEBUG: Computing file hash
+    filename: "Stray Kids - Charmer.mp3"
+[2026-02-27 03:34:16.296 +0530] DEBUG: Hash computed - uploading to temp bucket
+    filename: "Stray Kids - Charmer.mp3"
+    contentHash: "35d75ffb6e9fad7671b8dd3e3ab0b033f12befa60f1386c585cdfa0816e09327"
+    tempFile: "c42e5329-8313-4969-b4ff-dbb8061b4978_Stray Kids - Charmer.mp3"
+[2026-02-27 03:34:18.248 +0530] DEBUG: File uploaded to temp bucket
+    filename: "Stray Kids - Charmer.mp3"
+    tempFile: "c42e5329-8313-4969-b4ff-dbb8061b4978_Stray Kids - Charmer.mp3"
+Connected to PostgreSQL
+[2026-02-27 03:34:18.287 +0530] DEBUG: Moving file from temp to permanent bucket
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    tempFile: "c42e5329-8313-4969-b4ff-dbb8061b4978_Stray Kids - Charmer.mp3"
+    permanentFile: "35d75ffb6e9fad7671b8dd3e3ab0b033f12befa60f1386c585cdfa0816e09327_Stray Kids - Charmer.mp3"
+[2026-02-27 03:34:18.795 +0530] INFO: Original audio file stored in Supabase - fingerprinting queued
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    filename: "Stray Kids - Charmer.mp3"
+    fileSize: 6081305
+    mimeType: "audio/mpeg"
+    status: "ORIGINAL_FILE"
+    storagePath: "35d75ffb6e9fad7671b8dd3e3ab0b033f12befa60f1386c585cdfa0816e09327_Stray Kids - Charmer.mp3"
+[2026-02-27 03:34:18.803 +0530] DEBUG: Fingerprint job queued
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+[2026-02-27 03:34:18.805 +0530] DEBUG: Local temp file cleaned up
+    file: "C:\Users\Acer\WebProjects\AudioDedup\backend\uploads\0511bb631c0ee2e3bb28365699ff057b"
+[2026-02-27 03:34:18.805 +0530] INFO: Audio file uploaded successfully
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    filename: "Stray Kids - Charmer.mp3"
+    size: 6081305
+[2026-02-27 03:34:18.807 +0530] INFO: request completed
+    req: {
+      "id": 2,
+      "method": "POST",
+      "url": "/upload",
+      "query": {},
+      "params": {},
+      "headers": {
+        "user-agent": "PostmanRuntime/7.51.1",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "243598d7-d4fa-4f1a-abeb-b27e3a823e2f",
+        "host": "localhost:5000",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-type": "multipart/form-data; boundary=--------------------------719237513124143711266650",
+        "content-length": "6081528"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 54532
+    }
+    res: {
+      "statusCode": 201,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "x-ratelimit-limit": "100",
+        "x-ratelimit-remaining": "98",
+        "date": "Thu, 26 Feb 2026 22:04:16 GMT",
+        "x-ratelimit-reset": "1772143499",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "68",
+        "etag": "W/\"44-YsWCdaaUnL8MZ+fOsYBQLSRPCv4\""
+      }
+    }
+    responseTime: 2564
+[2026-02-27 03:34:18.809 +0530] INFO: Starting fingerprint processing
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+[2026-02-27 03:34:18.811 +0530] DEBUG: Downloading file from Supabase
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    storagePath: "35d75ffb6e9fad7671b8dd3e3ab0b033f12befa60f1386c585cdfa0816e09327_Stray Kids - Charmer.mp3"
+[2026-02-27 03:34:21.252 +0530] DEBUG: File downloaded for fingerprinting
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    tempFilePath: "C:\Users\Acer\AppData\Local\Temp\fp_c52c1bcb-0af9-413f-9568-9a1d9771aab0.tmp"
+[2026-02-27 03:34:21.401 +0530] DEBUG: Fingerprint generated
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    fingerprintLength: 3569
+[2026-02-27 03:34:21.405 +0530] INFO: Fingerprint stored in database
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+[2026-02-27 03:34:21.405 +0530] DEBUG: Starting similarity check against existing files
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    filename: "Stray Kids - Charmer.mp3"
+[2026-02-27 03:34:21.406 +0530] DEBUG: Comparing against 1 existing fingerprints
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    filesChecked: 1
+[2026-02-27 03:34:21.406 +0530] WARN: Similar audio file detected - warning generated
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    filename: "Stray Kids - Charmer.mp3"
+    similarAudioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    similarFilename: "Stray Kids - Charmer.flac"
+    similarity: "76.24%"
+    status: "SIMILAR_FILE"
+[2026-02-27 03:34:21.410 +0530] INFO: Similarity warning notification broadcast to subscribers
+    audioIdA: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    audioIdB: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    similarity: "76.24%"
+[2026-02-27 03:34:21.410 +0530] WARN: Similar audio detected
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    similarAudioId: "abfbc312-6c48-4532-8c85-d49d4dbf78cb"
+    similarity: "76.24"
+[2026-02-27 03:34:21.411 +0530] INFO: Fingerprint processing completed
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+[2026-02-27 03:34:21.412 +0530] DEBUG: Temporary fingerprint file removed
+    audioId: "7648331e-6f75-46c3-af5e-1ae841dd0d72"
+    tempFilePath: "C:\Users\Acer\AppData\Local\Temp\fp_c52c1bcb-0af9-413f-9568-9a1d9771aab0.tmp"
+[2026-02-27 03:34:21.415 +0530] DEBUG: Fingerprint job completed
+    jobId: "40"
+Connected to PostgreSQL
+[2026-02-27 03:34:32.473 +0530] INFO: All warnings endpoint called - found 1 total similarity warning(s)
+    warningCount: 1
+[2026-02-27 03:34:32.474 +0530] INFO: request completed
+    req: {
+      "id": 3,
+      "method": "GET",
+      "url": "/upload/warnings",
+      "query": {},
+      "params": {},
+      "headers": {
+        "user-agent": "PostmanRuntime/7.51.1",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "abc57ef1-ddbc-425f-b33d-a072d85ddfe5",
+        "host": "localhost:5000",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 60764
+    }
+    res: {
+      "statusCode": 200,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "x-ratelimit-limit": "100",
+        "x-ratelimit-remaining": "97",
+        "date": "Thu, 26 Feb 2026 22:04:32 GMT",
+        "x-ratelimit-reset": "1772143499",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "321",
+        "etag": "W/\"141-VobDeaHrDOBX1J3ICzLtB65ES+0\""
+      }
+    }
+    responseTime: 38
+[2026-02-27 03:34:48.797 +0530] DEBUG: Computing file hash
+    filename: "Stray Kids - Charmer.flac"
+[2026-02-27 03:34:48.853 +0530] DEBUG: Hash computed - uploading to temp bucket
+    filename: "Stray Kids - Charmer.flac"
+    contentHash: "b842470b7cf4932d58a2236ade0084ed9e2401a0676e905f71c408fb2e865dc2"
+    tempFile: "9caf49e6-4a67-4eac-be99-7622c235af63_Stray Kids - Charmer.flac"
+[2026-02-27 03:34:53.140 +0530] DEBUG: File uploaded to temp bucket
+    filename: "Stray Kids - Charmer.flac"
+    tempFile: "9caf49e6-4a67-4eac-be99-7622c235af63_Stray Kids - Charmer.flac"
+Connected to PostgreSQL
+[2026-02-27 03:34:53.174 +0530] WARN: Duplicate file rejected - identical file already exists
+    filename: "Stray Kids - Charmer.flac"
+    fileSize: 23705819
+    mimeType: "audio/x-flac"
+    isDuplicate: true
+    tempFile: "9caf49e6-4a67-4eac-be99-7622c235af63_Stray Kids - Charmer.flac"
+[2026-02-27 03:34:53.622 +0530] DEBUG: Local temp file cleaned up
+    file: "C:\Users\Acer\WebProjects\AudioDedup\backend\uploads\0ddd2b481b5031958477f0ffe0a8fa0a"
+[2026-02-27 03:34:53.622 +0530] INFO: Duplicate detected - file rejected
+    filename: "Stray Kids - Charmer.flac"
+[2026-02-27 03:34:53.623 +0530] INFO: request completed
+    req: {
+      "id": 4,
+      "method": "POST",
+      "url": "/upload",
+      "query": {},
+      "params": {},
+      "headers": {
+        "user-agent": "PostmanRuntime/7.51.1",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "335b64ea-0ebd-4d7d-9b9b-bc4be7337634",
+        "host": "localhost:5000",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-type": "multipart/form-data; boundary=--------------------------451737252711777664920933",
+        "content-length": "23706045"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 60777
+    }
+    res: {
+      "statusCode": 409,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "x-ratelimit-limit": "100",
+        "x-ratelimit-remaining": "96",
+        "date": "Thu, 26 Feb 2026 22:04:48 GMT",
+        "x-ratelimit-reset": "1772143499",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "55",
+        "etag": "W/\"37-0Dny3POLDjreR4DFCuFQD7ibluk\""
+      }
+    }
+    responseTime: 4949
+[2026-02-27 03:34:56.161 +0530] DEBUG: Computing file hash
+    filename: "Stray Kids - Charmer.mp3"
+[2026-02-27 03:34:56.175 +0530] DEBUG: Hash computed - uploading to temp bucket
+    filename: "Stray Kids - Charmer.mp3"
+    contentHash: "35d75ffb6e9fad7671b8dd3e3ab0b033f12befa60f1386c585cdfa0816e09327"
+    tempFile: "719f423c-95a2-4d8f-9c35-ed2dd2010028_Stray Kids - Charmer.mp3"
+[2026-02-27 03:34:59.060 +0530] DEBUG: File uploaded to temp bucket
+    filename: "Stray Kids - Charmer.mp3"
+    tempFile: "719f423c-95a2-4d8f-9c35-ed2dd2010028_Stray Kids - Charmer.mp3"
+[2026-02-27 03:34:59.061 +0530] WARN: Duplicate file rejected - identical file already exists
+    filename: "Stray Kids - Charmer.mp3"
+    fileSize: 6081305
+    mimeType: "audio/mpeg"
+    isDuplicate: true
+    tempFile: "719f423c-95a2-4d8f-9c35-ed2dd2010028_Stray Kids - Charmer.mp3"
+[2026-02-27 03:34:59.429 +0530] DEBUG: Local temp file cleaned up
+    file: "C:\Users\Acer\WebProjects\AudioDedup\backend\uploads\2f7ca48c874fcdeab9644243a6a92483"
+[2026-02-27 03:34:59.429 +0530] INFO: Duplicate detected - file rejected
+    filename: "Stray Kids - Charmer.mp3"
+[2026-02-27 03:34:59.430 +0530] INFO: request completed
+    req: {
+      "id": 5,
+      "method": "POST",
+      "url": "/upload",
+      "query": {},
+      "params": {},
+      "headers": {
+        "user-agent": "PostmanRuntime/7.51.1",
+        "accept": "*/*",
+        "cache-control": "no-cache",
+        "postman-token": "159ece7b-bda3-4547-bf13-254f0192d00e",
+        "host": "localhost:5000",
+        "accept-encoding": "gzip, deflate, br",
+        "connection": "keep-alive",
+        "content-type": "multipart/form-data; boundary=--------------------------868753373532697745600414",
+        "content-length": "6081528"
+      },
+      "remoteAddress": "::1",
+      "remotePort": 60777
+    }
+    res: {
+      "statusCode": 409,
+      "headers": {
+        "x-powered-by": "Express",
+        "access-control-allow-origin": "*",
+        "x-ratelimit-limit": "100",
+        "x-ratelimit-remaining": "95",
+        "date": "Thu, 26 Feb 2026 22:04:56 GMT",
+        "x-ratelimit-reset": "1772143499",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "55",
+        "etag": "W/\"37-0Dny3POLDjreR4DFCuFQD7ibluk\""
+      }
+    }
+    responseTime: 3300
