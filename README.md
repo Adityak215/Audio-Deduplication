@@ -1,6 +1,6 @@
 # Audio Upload Deduplication
 
-Minimal full-stack demo for an audio upload pipeline that:
+Minimal demo for audio upload pipeline that:
 - rejects exact duplicate files
 - detects highly similar audio after async fingerprinting
 - exposes warning history and realtime warning events
