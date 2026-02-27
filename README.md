@@ -5,7 +5,7 @@ Minimal full-stack demo for an audio upload pipeline that:
 - detects highly similar audio after async fingerprinting
 - exposes warning history and realtime warnings
 
-## Assignment Requirements Covered
+## Requirements Covered
 
 1. Exact duplicate detection:
    Uses SHA-256 content hash of the uploaded file stream.  
