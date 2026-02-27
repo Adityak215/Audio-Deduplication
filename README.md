@@ -139,3 +139,8 @@ npm run dev
 ```
 
 Open `http://localhost:3000`.
+<img width="1016" height="347" alt="Screenshot 2026-02-27 174718" src="https://github.com/user-attachments/assets/cc8dfb2f-e8c5-4222-acd8-0e0d35bfeb94" />
+<img width="1010" height="315" alt="Screenshot 2026-02-27 174653" src="https://github.com/user-attachments/assets/34031382-df1d-4e65-9a61-714c025c6bc1" />
+<img width="1012" height="853" alt="Screenshot 2026-02-27 174637" src="https://github.com/user-attachments/assets/112a1ecb-7a5f-409e-bbb9-ad69b00f0077" />
+
+
